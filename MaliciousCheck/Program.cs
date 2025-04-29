@@ -18,6 +18,7 @@ namespace MaliciousCheck
         [STAThread]
         static void Main()
         {
+            /*
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
             WindowsPrincipal principal = new WindowsPrincipal(identity);
             if (!principal.IsInRole(WindowsBuiltInRole.Administrator))
@@ -38,7 +39,7 @@ namespace MaliciousCheck
                     MessageBox.Show("请使用管理员启动程序", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Process.GetCurrentProcess().Kill();
                 }
-            }
+            }*/
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Batteries.Init();

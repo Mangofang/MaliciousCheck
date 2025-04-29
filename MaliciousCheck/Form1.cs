@@ -991,6 +991,16 @@ namespace MaliciousCheck
                     }.open();
                 });
             }
+            else if (buttontext.Contains("复制路径"))
+            {
+                new AntdUI.Message.Config(this, buttontext, TType.Success)
+                {
+                    ShowInWindow = true,
+                    ClickClose = false,
+                    AutoClose = 2
+                }.open();
+                Clipboard.SetDataObject(buttontext);
+            }
         }
         private void select1_SelectedIndexChanged(object sender, IntEventArgs e)
         {
@@ -1084,5 +1094,6 @@ namespace MaliciousCheck
             Form4 form = new Form4();
             form.ShowDialog();
         }
+
     }
 }

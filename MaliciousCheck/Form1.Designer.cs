@@ -86,6 +86,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.divider2 = new AntdUI.Divider();
+            this.uploadDragger1 = new AntdUI.UploadDragger();
             this.tabs1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -117,7 +118,7 @@
             this.pageHeader1.Name = "pageHeader1";
             this.pageHeader1.ShowButton = true;
             this.pageHeader1.ShowIcon = true;
-            this.pageHeader1.Size = new System.Drawing.Size(696, 32);
+            this.pageHeader1.Size = new System.Drawing.Size(936, 30);
             this.pageHeader1.TabIndex = 0;
             this.pageHeader1.Text = "MaliciousCheck";
             // 
@@ -145,7 +146,7 @@
             this.tabs1.Pages.Add(this.tabPage7);
             this.tabs1.Pages.Add(this.tabPage9);
             this.tabs1.Pages.Add(this.tabPage5);
-            this.tabs1.Size = new System.Drawing.Size(678, 263);
+            this.tabs1.Size = new System.Drawing.Size(917, 326);
             styleCard1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             styleCard1.Gap = 8;
             this.tabs1.Style = styleCard1;
@@ -156,9 +157,9 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.SystemMessage);
-            this.tabPage1.Location = new System.Drawing.Point(3, 25);
+            this.tabPage1.Location = new System.Drawing.Point(3, 27);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(672, 235);
+            this.tabPage1.Size = new System.Drawing.Size(911, 296);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "系统信息";
             // 
@@ -167,16 +168,16 @@
             this.SystemMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SystemMessage.Location = new System.Drawing.Point(5, 3);
             this.SystemMessage.Name = "SystemMessage";
-            this.SystemMessage.Size = new System.Drawing.Size(664, 235);
+            this.SystemMessage.Size = new System.Drawing.Size(903, 292);
             this.SystemMessage.TabIndex = 0;
             this.SystemMessage.Text = "";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.HotfixAbout);
-            this.tabPage2.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage2.Location = new System.Drawing.Point(-672, -217);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(672, 235);
+            this.tabPage2.Size = new System.Drawing.Size(672, 217);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "补丁信息";
             // 
@@ -184,7 +185,7 @@
             // 
             this.HotfixAbout.Location = new System.Drawing.Point(5, 3);
             this.HotfixAbout.Name = "HotfixAbout";
-            this.HotfixAbout.Size = new System.Drawing.Size(664, 239);
+            this.HotfixAbout.Size = new System.Drawing.Size(903, 292);
             this.HotfixAbout.TabIndex = 0;
             this.HotfixAbout.Tag = "";
             this.HotfixAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.table1_CellButtonClick);
@@ -192,9 +193,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.StartUpAbout);
-            this.tabPage3.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage3.Location = new System.Drawing.Point(-672, -217);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(672, 235);
+            this.tabPage3.Size = new System.Drawing.Size(672, 217);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "StartUp启动项";
             // 
@@ -202,7 +203,7 @@
             // 
             this.StartUpAbout.Location = new System.Drawing.Point(5, 3);
             this.StartUpAbout.Name = "StartUpAbout";
-            this.StartUpAbout.Size = new System.Drawing.Size(664, 239);
+            this.StartUpAbout.Size = new System.Drawing.Size(903, 292);
             this.StartUpAbout.TabIndex = 1;
             this.StartUpAbout.Tag = "";
             this.StartUpAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.StartUpAbout_CellButtonClick);
@@ -210,9 +211,9 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.RegStartUpAbout);
-            this.tabPage4.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage4.Location = new System.Drawing.Point(-672, -217);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(672, 235);
+            this.tabPage4.Size = new System.Drawing.Size(672, 217);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "注册表启动项";
             // 
@@ -220,7 +221,7 @@
             // 
             this.RegStartUpAbout.Location = new System.Drawing.Point(5, 3);
             this.RegStartUpAbout.Name = "RegStartUpAbout";
-            this.RegStartUpAbout.Size = new System.Drawing.Size(664, 239);
+            this.RegStartUpAbout.Size = new System.Drawing.Size(903, 292);
             this.RegStartUpAbout.TabIndex = 2;
             this.RegStartUpAbout.Tag = "";
             this.RegStartUpAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.RegStartUpAbout_CellButtonClick);
@@ -228,9 +229,9 @@
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.TaskStartUpAbout);
-            this.tabPage8.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage8.Location = new System.Drawing.Point(-672, -217);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(672, 235);
+            this.tabPage8.Size = new System.Drawing.Size(672, 217);
             this.tabPage8.TabIndex = 8;
             this.tabPage8.Text = "计划任务";
             // 
@@ -238,7 +239,7 @@
             // 
             this.TaskStartUpAbout.Location = new System.Drawing.Point(5, 3);
             this.TaskStartUpAbout.Name = "TaskStartUpAbout";
-            this.TaskStartUpAbout.Size = new System.Drawing.Size(664, 239);
+            this.TaskStartUpAbout.Size = new System.Drawing.Size(903, 292);
             this.TaskStartUpAbout.TabIndex = 3;
             this.TaskStartUpAbout.Tag = "";
             this.TaskStartUpAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.TaskStartUpAbout_CellButtonClick);
@@ -246,9 +247,9 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.UserAbout);
-            this.tabPage6.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage6.Location = new System.Drawing.Point(-672, -217);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(672, 235);
+            this.tabPage6.Size = new System.Drawing.Size(672, 217);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "用户";
             // 
@@ -256,16 +257,16 @@
             // 
             this.UserAbout.Location = new System.Drawing.Point(5, 3);
             this.UserAbout.Name = "UserAbout";
-            this.UserAbout.Size = new System.Drawing.Size(664, 239);
+            this.UserAbout.Size = new System.Drawing.Size(903, 292);
             this.UserAbout.TabIndex = 4;
             this.UserAbout.Tag = "";
             // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.ConnectAbout);
-            this.tabPage7.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage7.Location = new System.Drawing.Point(-672, -217);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(672, 235);
+            this.tabPage7.Size = new System.Drawing.Size(672, 217);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "外部连接";
             // 
@@ -273,7 +274,7 @@
             // 
             this.ConnectAbout.Location = new System.Drawing.Point(5, 3);
             this.ConnectAbout.Name = "ConnectAbout";
-            this.ConnectAbout.Size = new System.Drawing.Size(664, 239);
+            this.ConnectAbout.Size = new System.Drawing.Size(903, 292);
             this.ConnectAbout.TabIndex = 5;
             this.ConnectAbout.Tag = "";
             this.ConnectAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.ConnectAbout_CellButtonClick);
@@ -281,10 +282,10 @@
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.ProcessAbout);
-            this.tabPage9.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage9.Location = new System.Drawing.Point(-911, -296);
             this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(672, 235);
+            this.tabPage9.Size = new System.Drawing.Size(911, 296);
             this.tabPage9.TabIndex = 9;
             this.tabPage9.Text = "进程";
             // 
@@ -292,7 +293,7 @@
             // 
             this.ProcessAbout.Location = new System.Drawing.Point(5, 3);
             this.ProcessAbout.Name = "ProcessAbout";
-            this.ProcessAbout.Size = new System.Drawing.Size(664, 239);
+            this.ProcessAbout.Size = new System.Drawing.Size(903, 292);
             this.ProcessAbout.TabIndex = 7;
             this.ProcessAbout.Tag = "";
             this.ProcessAbout.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.ProcessAbout_CellButtonClick);
@@ -310,43 +311,43 @@
             this.tabPage5.Controls.Add(this.label8);
             this.tabPage5.Controls.Add(this.input1);
             this.tabPage5.Controls.Add(this.label4);
-            this.tabPage5.Location = new System.Drawing.Point(-672, -235);
+            this.tabPage5.Location = new System.Drawing.Point(-672, -217);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(672, 235);
+            this.tabPage5.Size = new System.Drawing.Size(672, 217);
             this.tabPage5.TabIndex = 7;
             this.tabPage5.Text = "程序设置";
             // 
             // label14
             // 
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
-            this.label14.Location = new System.Drawing.Point(387, 86);
+            this.label14.Location = new System.Drawing.Point(389, 79);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(282, 48);
+            this.label14.Size = new System.Drawing.Size(282, 44);
             this.label14.TabIndex = 13;
             this.label14.Text = "* YaraRule_Small 整合部分常见规则 速度快 精度高\r\n* YaraRule_Full 整合更多规则 速度稍慢 精度稍低";
             // 
             // label13
             // 
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
-            this.label13.Location = new System.Drawing.Point(412, 61);
+            this.label13.Location = new System.Drawing.Point(389, 57);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(257, 23);
+            this.label13.Size = new System.Drawing.Size(257, 21);
             this.label13.TabIndex = 12;
             this.label13.Text = "* 将导入的Yara放入程序根目录即可";
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(412, 25);
+            this.label11.Location = new System.Drawing.Point(389, 23);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 23);
+            this.label11.Size = new System.Drawing.Size(92, 21);
             this.label11.TabIndex = 11;
             this.label11.Text = "Yara默认规则";
             // 
             // select1
             // 
-            this.select1.Location = new System.Drawing.Point(510, 19);
+            this.select1.Location = new System.Drawing.Point(472, 18);
             this.select1.Name = "select1";
-            this.select1.Size = new System.Drawing.Size(159, 36);
+            this.select1.Size = new System.Drawing.Size(199, 33);
             this.select1.TabIndex = 10;
             this.select1.SelectedIndexChanged += new AntdUI.IntEventHandler(this.select1_SelectedIndexChanged);
             // 
@@ -354,66 +355,66 @@
             // 
             this.button1.DefaultBack = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(281, 61);
+            this.button1.Location = new System.Drawing.Point(281, 56);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 9;
             this.button1.Text = "保存Key";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // switch1
             // 
-            this.switch1.Location = new System.Drawing.Point(136, 106);
+            this.switch1.Location = new System.Drawing.Point(136, 98);
             this.switch1.Name = "switch1";
-            this.switch1.Size = new System.Drawing.Size(59, 32);
+            this.switch1.Size = new System.Drawing.Size(59, 30);
             this.switch1.TabIndex = 6;
             this.switch1.Text = "switch1";
             this.switch1.Click += new System.EventHandler(this.switch1_Click);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(5, 111);
+            this.label9.Location = new System.Drawing.Point(5, 102);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 23);
+            this.label9.Size = new System.Drawing.Size(125, 21);
             this.label9.TabIndex = 5;
             this.label9.Text = "自动检查外部连接IP";
             // 
             // input2
             // 
-            this.input2.Location = new System.Drawing.Point(103, 54);
+            this.input2.Location = new System.Drawing.Point(103, 50);
             this.input2.Name = "input2";
-            this.input2.Size = new System.Drawing.Size(169, 36);
+            this.input2.Size = new System.Drawing.Size(169, 33);
             this.input2.TabIndex = 4;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(5, 61);
+            this.label8.Location = new System.Drawing.Point(5, 56);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 23);
+            this.label8.Size = new System.Drawing.Size(92, 21);
             this.label8.TabIndex = 3;
             this.label8.Text = "微步APIKey";
             // 
             // input1
             // 
-            this.input1.Location = new System.Drawing.Point(103, 12);
+            this.input1.Location = new System.Drawing.Point(103, 11);
             this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(169, 36);
+            this.input1.Size = new System.Drawing.Size(169, 33);
             this.input1.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(5, 19);
+            this.label4.Location = new System.Drawing.Point(5, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 23);
+            this.label4.Size = new System.Drawing.Size(92, 21);
             this.label4.TabIndex = 1;
             this.label4.Text = "长亭IP-APIKey";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tabs1);
-            this.panel1.Location = new System.Drawing.Point(5, 207);
+            this.panel1.Location = new System.Drawing.Point(5, 191);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(684, 273);
+            this.panel1.Size = new System.Drawing.Size(923, 332);
             this.panel1.TabIndex = 3;
             this.panel1.Text = "panel1";
             // 
@@ -425,9 +426,9 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.divider1);
-            this.panel2.Location = new System.Drawing.Point(5, 37);
+            this.panel2.Location = new System.Drawing.Point(5, 34);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 164);
+            this.panel2.Size = new System.Drawing.Size(236, 151);
             this.panel2.TabIndex = 4;
             this.panel2.Text = "panel2";
             // 
@@ -435,9 +436,9 @@
             // 
             this.button5.DefaultBack = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(11, 81);
+            this.button5.Location = new System.Drawing.Point(11, 75);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(98, 36);
+            this.button5.Size = new System.Drawing.Size(98, 33);
             this.button5.TabIndex = 17;
             this.button5.Text = "Yara扫描";
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -446,9 +447,9 @@
             // 
             this.button4.DefaultBack = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(11, 115);
+            this.button4.Location = new System.Drawing.Point(11, 106);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(215, 36);
+            this.button4.Size = new System.Drawing.Size(215, 33);
             this.button4.TabIndex = 16;
             this.button4.Text = "一键扫描所有启动项（Yara）";
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -457,9 +458,9 @@
             // 
             this.button2.DefaultBack = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(128, 44);
+            this.button2.Location = new System.Drawing.Point(128, 41);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 36);
+            this.button2.Size = new System.Drawing.Size(98, 33);
             this.button2.TabIndex = 14;
             this.button2.Text = "重新获取信息";
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -468,9 +469,9 @@
             // 
             this.button3.DefaultBack = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(11, 44);
+            this.button3.Location = new System.Drawing.Point(11, 41);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 36);
+            this.button3.Size = new System.Drawing.Size(98, 33);
             this.button3.TabIndex = 15;
             this.button3.Text = "日志分析";
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -480,7 +481,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 11);
+            this.label1.Location = new System.Drawing.Point(7, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 1;
@@ -491,15 +492,16 @@
             this.divider1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.divider1.ColorSplit = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.divider1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.divider1.Location = new System.Drawing.Point(0, 31);
+            this.divider1.Location = new System.Drawing.Point(0, 29);
             this.divider1.Name = "divider1";
             this.divider1.Orientation = AntdUI.TOrientation.Left;
-            this.divider1.Size = new System.Drawing.Size(233, 23);
+            this.divider1.Size = new System.Drawing.Size(233, 21);
             this.divider1.TabIndex = 0;
             this.divider1.Text = "";
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.uploadDragger1);
             this.panel3.Controls.Add(this.ProcessCountLab);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.pictureBox5);
@@ -517,9 +519,9 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.divider2);
-            this.panel3.Location = new System.Drawing.Point(247, 37);
+            this.panel3.Location = new System.Drawing.Point(247, 34);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(442, 164);
+            this.panel3.Size = new System.Drawing.Size(681, 151);
             this.panel3.TabIndex = 5;
             this.panel3.Text = "panel3";
             // 
@@ -529,7 +531,7 @@
             this.ProcessCountLab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ProcessCountLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcessCountLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ProcessCountLab.Location = new System.Drawing.Point(375, 134);
+            this.ProcessCountLab.Location = new System.Drawing.Point(375, 124);
             this.ProcessCountLab.Name = "ProcessCountLab";
             this.ProcessCountLab.Size = new System.Drawing.Size(17, 17);
             this.ProcessCountLab.TabIndex = 16;
@@ -540,7 +542,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(372, 105);
+            this.label12.Location = new System.Drawing.Point(372, 97);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 17);
             this.label12.TabIndex = 15;
@@ -551,9 +553,9 @@
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(317, 104);
+            this.pictureBox5.Location = new System.Drawing.Point(317, 96);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox5.Size = new System.Drawing.Size(49, 42);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
@@ -564,7 +566,7 @@
             this.ConnectCountLab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ConnectCountLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectCountLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ConnectCountLab.Location = new System.Drawing.Point(372, 81);
+            this.ConnectCountLab.Location = new System.Drawing.Point(372, 75);
             this.ConnectCountLab.Name = "ConnectCountLab";
             this.ConnectCountLab.Size = new System.Drawing.Size(17, 17);
             this.ConnectCountLab.TabIndex = 13;
@@ -576,7 +578,7 @@
             this.UserCountLab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.UserCountLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserCountLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UserCountLab.Location = new System.Drawing.Point(251, 133);
+            this.UserCountLab.Location = new System.Drawing.Point(251, 123);
             this.UserCountLab.Name = "UserCountLab";
             this.UserCountLab.Size = new System.Drawing.Size(17, 17);
             this.UserCountLab.TabIndex = 12;
@@ -588,7 +590,7 @@
             this.StartUpCountLab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.StartUpCountLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartUpCountLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.StartUpCountLab.Location = new System.Drawing.Point(251, 81);
+            this.StartUpCountLab.Location = new System.Drawing.Point(251, 75);
             this.StartUpCountLab.Name = "StartUpCountLab";
             this.StartUpCountLab.Size = new System.Drawing.Size(17, 17);
             this.StartUpCountLab.TabIndex = 11;
@@ -599,7 +601,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(251, 104);
+            this.label7.Location = new System.Drawing.Point(251, 96);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 17);
             this.label7.TabIndex = 10;
@@ -610,7 +612,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(369, 52);
+            this.label6.Location = new System.Drawing.Point(369, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 9;
@@ -621,7 +623,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(251, 55);
+            this.label5.Location = new System.Drawing.Point(251, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 17);
             this.label5.TabIndex = 8;
@@ -632,9 +634,9 @@
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(196, 104);
+            this.pictureBox4.Location = new System.Drawing.Point(196, 96);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox4.Size = new System.Drawing.Size(49, 42);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -644,9 +646,9 @@
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(317, 52);
+            this.pictureBox3.Location = new System.Drawing.Point(317, 48);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(49, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -656,9 +658,9 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(196, 52);
+            this.pictureBox2.Location = new System.Drawing.Point(196, 48);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(49, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -669,7 +671,7 @@
             this.AllCountLab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.AllCountLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllCountLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.AllCountLab.Location = new System.Drawing.Point(103, 105);
+            this.AllCountLab.Location = new System.Drawing.Point(103, 97);
             this.AllCountLab.Name = "AllCountLab";
             this.AllCountLab.Size = new System.Drawing.Size(17, 17);
             this.AllCountLab.TabIndex = 4;
@@ -680,7 +682,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(103, 60);
+            this.label3.Location = new System.Drawing.Point(103, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 3;
@@ -691,9 +693,9 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 55);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -703,7 +705,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 11);
+            this.label2.Location = new System.Drawing.Point(7, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 1;
@@ -714,19 +716,29 @@
             this.divider2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.divider2.ColorSplit = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
             this.divider2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.divider2.Location = new System.Drawing.Point(0, 31);
+            this.divider2.Location = new System.Drawing.Point(0, 29);
             this.divider2.Name = "divider2";
             this.divider2.Orientation = AntdUI.TOrientation.Left;
-            this.divider2.Size = new System.Drawing.Size(439, 23);
+            this.divider2.Size = new System.Drawing.Size(675, 21);
             this.divider2.TabIndex = 0;
             this.divider2.Text = "";
             // 
+            // uploadDragger1
+            // 
+            this.uploadDragger1.Filter = "";
+            this.uploadDragger1.Location = new System.Drawing.Point(443, 48);
+            this.uploadDragger1.Name = "uploadDragger1";
+            this.uploadDragger1.Size = new System.Drawing.Size(229, 93);
+            this.uploadDragger1.TabIndex = 17;
+            this.uploadDragger1.Text = "文件上传检测";
+            this.uploadDragger1.TextDesc = "拖拽或点击上传";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(694, 485);
+            this.ClientSize = new System.Drawing.Size(934, 528);
             this.Controls.Add(this.pageHeader1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -821,6 +833,7 @@
         private AntdUI.Label label13;
         private AntdUI.Label label14;
         private AntdUI.Button button5;
+        private AntdUI.UploadDragger uploadDragger1;
     }
 }
 
